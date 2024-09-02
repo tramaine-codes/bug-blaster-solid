@@ -34,7 +34,7 @@ export default function App() {
 							<option value="Low to High">Low to High</option>
 						</select>
 
-						<TicketList tickets={tickets()} />
+						<TicketList />
 					</div>
 				</Show>
 			</div>
