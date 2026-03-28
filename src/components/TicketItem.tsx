@@ -1,7 +1,7 @@
 import {
-  type Ticket,
   deleteTicket,
   setEditingTicket,
+  type Ticket,
 } from "../stores/ticketStore";
 
 interface TicketItemProps {

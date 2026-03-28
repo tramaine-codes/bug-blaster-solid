@@ -1,4 +1,4 @@
-import { For, Show, createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, For, Show } from "solid-js";
 import {
   addTicket,
   clearEditingTicket,
@@ -62,8 +62,9 @@ export default function TicketForm() {
   return (
     <form onSubmit={handleSubmit} class="ticket-form">
       <div>
-        <label>Title</label>
+        <label for="title">Title</label>
         <input
+          id="title"
           type="text"
           value={title()}
           class="form-input"
@@ -72,8 +73,9 @@ export default function TicketForm() {
       </div>
 
       <div>
-        <label>Description</label>
+        <label for="description">Description</label>
         <textarea
+          id="description"
           value={description()}
           class="form-input"
           onInput={(e) => setDescription(e.currentTarget.value)}

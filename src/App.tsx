@@ -3,9 +3,9 @@ import "./App.css";
 import TicketForm from "./components/TicketForm";
 import TicketList from "./components/TicketList";
 import {
-  type TicketState,
   setSortPreference,
   sortPreference,
+  type TicketState,
   tickets,
 } from "./stores/ticketStore";
 import "./styles.css";
